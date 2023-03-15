@@ -1,0 +1,236 @@
+@import url(reset.css);
+
+:root {
+    --app-bg-gray: #fff;/* used */
+    --app-body-text-color: #4c4d4d; /* used */
+}
+
+body {
+    background-color: var(--app-bg-gray);
+    color: var(--app-body-text-color);
+}
+
+/* ------------------------------- */
+/* CSS Page Container              */
+/* ------------------------------- */
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* ------------------------------- */
+/* HOME - Main                     */
+/* ------------------------------- */
+
+main {
+    height: 100vh;
+    overflow: auto;
+}
+
+section {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content {
+    width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.input select {
+    width: 35%;
+    background-color: #e0e0e08f;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding-left: 10px;
+}
+
+.input select ~ select {
+    width: 35%;
+    background-color: #e0e0e08f;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.input button {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.grid-container {
+    margin-top: 20px;
+    height: 336.63px;
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr);
+    grid-template-rows: repeat( 4, 1fr);
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    background-color: #e0e0e08f;
+    padding: 10px;
+    border-radius: 5px;
+    grid-template-areas:"s19 s20 s21 s22 s23 s24"
+                        "s13 s14 s15 s16 s17 s18"
+                        "s7 s8 s9 s10 s11 s12"
+                        "s1 s2 s3 s4 s5 s6";
+}
+
+.grid-container div {
+    width: 71.66px;
+    height: 71.66px;
+    background-color: rgba(234, 0, 255, 0.9);
+    cursor: pointer;
+}
+
+.color {
+    background-color:#0f9;
+}
+
+.circle {
+    border-radius: 50px;
+}
+
+.square {
+    border-radius: 5px;
+}
+
+div.shape {
+    width: 71.66px;
+    height: 71.66px;
+    background-color: rgba(234, 0, 255, 0.9);
+}
+
+/*
+.grid-container div:nth-child(1) {
+    grid-area: s1;
+}
+
+.grid-container div:nth-child(2) {
+    grid-area: s2;
+}
+
+.grid-container div:nth-child(3) {
+    grid-area: s3;
+}
+
+.grid-container div:nth-child(4) {
+    grid-area: s4;
+}
+
+.grid-container div:nth-child(5) {
+    grid-area: s5;
+}
+
+.grid-container div:nth-child(6) {
+    grid-area: s6;
+}
+
+.grid-container div:nth-child(7) {
+    grid-area: s7;
+}
+
+.grid-container div:nth-child(8) {
+    grid-area: s8;
+}
+
+.grid-container div:nth-child(9) {
+    grid-area: s9;
+}
+
+.grid-container div:nth-child(10) {
+    grid-area: s10;
+}
+
+.grid-container div:nth-child(11) {
+    grid-area: s11;
+}
+
+.grid-container div:nth-child(12) {
+    grid-area: s12;
+}
+
+/*
+.grid-container div:nth-child(1) {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.grid-container div:nth-child(2) {
+    grid-row: 4;
+    grid-column: 2;
+}
+.grid-container div:nth-child(3) {
+    grid-row: 4;
+    grid-column: 3;
+} 
+
+.grid-container div:nth-child(4) {
+    grid-row: 4;
+    grid-column: 4;
+} 
+
+.grid-container div:nth-child(5) {
+    grid-row: 4;
+    grid-column: 5;
+} 
+
+.grid-container div:nth-child(6) {
+    grid-row: 4;
+    grid-column: 6;
+} 
+
+.grid-container div:nth-child(7) {
+    grid-row: 3;
+    grid-column: 1;
+} 
+*/
+
+div.message {
+    height: 50px;
+    line-height: 50px;
+}
+
+div.button {
+    padding: 10px 35px;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    background-color: #12274e;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(131, 131, 131, 0.4);
+    padding: 15px 35px;
+    cursor: pointer;
+    text-decoration: none;
+    animation-delay: 0.3s; 
+}
+
+.button:hover {
+    opacity: 0.7;
+}
